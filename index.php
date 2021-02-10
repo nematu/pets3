@@ -41,8 +41,8 @@ $f3->route('GET|POST /order', function($f3) {
 });
 
 $f3->route('GET|POST /order2', function($f3){
-    if(isset($_POST['typePet'])){
-        $_SESSION['typePet'] = $_POST['typePet'];
+    if(isset($_POST['pet'])){
+        $_SESSION['pet'] = $_POST['pet'];
     }
     if(isset($_POST['color'])){
         $_SESSION['color'] = $_POST['color'];
@@ -62,15 +62,15 @@ $f3->route('POST /summary', function() {
     if(isset($_POST['size'])){
         $_SESSION['size'] = $_POST['size'];
     }
-    if(isset($_POST['accessory'])){
-        $_SESSION['accessory'] = $_POST['accessory'];
+    if(isset($_POST['accessories'])){
+        $_SESSION['accessories'] = $_POST['accessories'];
     }
 
-    if (isset($_POST['name'])) {
-        $_SESSION['name'] = $_POST['name'];
+    if (isset($_POST['petName'])) {
+        $_SESSION['petName'] = $_POST['petName'];
     }
 
-    
+
     $view = new Template();
     echo $view->render("views/order-summary.html");
 });
