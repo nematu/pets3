@@ -1,0 +1,17 @@
+{
+  "name": "328/pet3",
+  "authors": [
+    {
+      "name": "Thanh Tran",
+      "email": "ttran112@mail.greenriver.edu"
+    },
+    {
+      "name": "Nematu",
+      "email": "nayaz-akhundzada@mail.greenriver.edu"
+    }
+
+  ],
+  "require": {
+    "bcosca/fatfree-core": "dev-master"
+  }
+}
