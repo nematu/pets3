@@ -8,12 +8,12 @@
             <input type="text" name="pet">
         </label>
         <br>
-        <label>Select a color
-            <select class="form-select" aria-label="Default select example" name="color">
-                <option >Select a color</option>
-                <option value="Red" >Red</option>
-                <option value="Blue" >Blue</option>
-                <option value="Orange" >Orange</option>
+        <label>please Select a Color:
+            <select class="form-control"  name="color" id="color">
+                <option > select </option>
+                <repeat group="{{@colors}}" value ="{{@colorOption}}">
+                    <option> {{@colorOption}}</option>
+                </repeat>
             </select>
         </label>
         <br>
